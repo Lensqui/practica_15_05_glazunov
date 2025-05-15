@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Приветствие</string>
+    <string name="welcome_title">ДОБРО \nПОЖАЛОВАТЬ</string>
+    <string name="start_journey_title">Начнем \nпутешествие</string>
+    <string name="you_have_power_title">У Вас Есть Сила, \nЧтобы</string>
+    <string name="start_journey_subtitle">Умная, великолепная и модная коллекция. \nИзучите сейчас</string>
+    <string name="you_have_power_subtitle">В вашей комнате много красивых и привлекательных растений</string>
+    <string name="next_button">Далее</string>
+    <string name="start_button">Начать</string>
+    <string name="welcome_subtitle" translatable="false"></string>
+    <string name="sign_up_title">Регистрация</string>
+    <string name="username_hint">Имя пользователя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="confirm_password_hint">Подтвердите пароль</string>
+    <string name="sign_up_button">Зарегистрироваться</string>
+    <string name="already_have_account">Уже есть аккаунт? <b>Войти</b></string>
+    <string name="login_title">Вход</string>
+    <string name="login_button">Войти</string>
+    <string name="dont_have_account">Нет аккаунта? <b>Зарегистрироваться</b></string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/blue_90</item>
+        <item name="colorPrimaryDark">@color/blue_90</item>
+        <item name="android:windowBackground">@color/blue_90</item>
+    </style>
+    <style name="Widget.MaterialComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/transparent_white</item>
+        <item name="boxStrokeColor">@color/gray</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="hintTextColor">@color/hint_gray</item>
+    </style>
+</resources>

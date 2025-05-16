@@ -33,14 +33,17 @@ public class OnboardingPageFragment extends Fragment {
         int position = getArguments().getInt(ARG_POSITION);
         switch (position) {
             case 0:
+                imageView.setImageResource(R.drawable.botinok1);
                 textView.setText(getResources().getString(R.string.welcome_title));
                 subtitleText.setText(getResources().getString(R.string.welcome_subtitle));
                 break;
             case 1:
+                imageView.setImageResource(R.drawable.botinok1);
                 textView.setText(getResources().getString(R.string.start_journey_title));
                 subtitleText.setText(getResources().getString(R.string.start_journey_subtitle));
                 break;
             case 2:
+                imageView.setImageResource(R.drawable.botinok1);
                 textView.setText(getResources().getString(R.string.you_have_power_title));
                 subtitleText.setText(getResources().getString(R.string.you_have_power_subtitle));
                 break;

@@ -6,12 +6,23 @@
         <item name="android:windowBackground">@color/blue_90</item>
     </style>
     <style name="Widget.MaterialComponents.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxBackgroundColor">@color/transparent_white</item>
+        <item name="boxBackgroundColor">@color/header_sign_gray</item>
         <item name="boxStrokeColor">@color/gray</item>
-        <item name="boxCornerRadiusTopStart">10dp</item>
-        <item name="boxCornerRadiusTopEnd">10dp</item>
-        <item name="boxCornerRadiusBottomStart">10dp</item>
-        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
         <item name="hintTextColor">@color/hint_gray</item>
+    </style>
+    <style name="PinButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 </resources>

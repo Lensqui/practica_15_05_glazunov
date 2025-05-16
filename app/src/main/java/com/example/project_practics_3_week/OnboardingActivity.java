@@ -50,7 +50,7 @@ public class OnboardingActivity extends AppCompatActivity {
         if (position < 2) {
             viewPager.setCurrentItem(position + 1, true);
         } else {
-            startActivity(new Intent(this, Home.class));
+            startActivity(new Intent(this, EnterPinActivity.class));
             finish();
         }
     }

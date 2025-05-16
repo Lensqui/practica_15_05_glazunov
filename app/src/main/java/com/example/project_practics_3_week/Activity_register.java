@@ -14,7 +14,7 @@ public class Activity_register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         CheckBox cbAgreement = findViewById(R.id.cbAgreement);
-        cbAgreement.setText(Html.fromHtml("Даю согласие на <u>обработку персональных данных</u>")); //может будет какое-то типо соглашение чисто тест//
-
+        cbAgreement.setText(Html.fromHtml("<u>Даю согласие на обработку персональных данных</u>"));
+        //может будет какое-то типо соглашение чисто тест
     }
 }

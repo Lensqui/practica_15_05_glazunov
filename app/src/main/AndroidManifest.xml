@@ -13,13 +13,17 @@
         android:theme="@style/Theme.Project_practics_3_week"
         tools:targetApi="31">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".ForgotPasswordActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".OtpVerificationActivity">
+        </activity>
+        <activity android:name=".Activity_register">
         </activity>
     </application>
 

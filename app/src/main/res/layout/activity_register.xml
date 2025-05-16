@@ -6,8 +6,19 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/circle_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
     <TextView
         android:id="@+id/title"
+        android:textColor="@color/black"
+        android:fontFamily="@font/new_peninim_mt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Регистрация"
@@ -15,14 +26,14 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
         android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Заполните Свои Данные Или \nПродолжите Через Социальные Медиа"
+        android:text="Заполните свои данные или \nпродолжите через социальные медиа"
         android:textSize="14sp"
         android:gravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -49,17 +60,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/label_name"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         style="@style/Widget.MaterialComponents.TextInputLayout"
         app:boxStrokeColor="@color/gray"
-        app:boxCornerRadius="10dp"
         app:hintTextColor="@color/hint_gray">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="" />
+            android:fontFamily="@font/new_peninim_mt"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -81,17 +91,16 @@
         app:layout_constraintTop_toBottomOf="@id/label_email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         style="@style/Widget.MaterialComponents.TextInputLayout"
         app:boxStrokeColor="@color/gray"
-        app:boxCornerRadius="10dp"
         app:hintTextColor="@color/hint_gray">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="xyz@gmail.com"
+            android:fontFamily="@font/new_peninim_mt"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,12 +123,12 @@
         app:layout_constraintTop_toBottomOf="@id/label_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         style="@style/Widget.MaterialComponents.TextInputLayout"
         app:boxStrokeColor="@color/gray"
-        app:boxCornerRadius="10dp"
         app:hintTextColor="@color/hint_gray"
         app:endIconMode="password_toggle"
+        app:endIconCheckable="false"
         app:endIconTint="@color/gray">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -134,19 +143,22 @@
         android:id="@+id/cbAgreement"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Даю согласие на <u>обработку персональных данных</u>"
+        android:text="Даю согласие на обработку персональных данных"
         android:textColor="@color/tipo_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordInputLayout"
         android:layout_marginTop="16dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Зарегистрироваться"
-        android:backgroundTint="@color/blue_90"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cbAgreement"

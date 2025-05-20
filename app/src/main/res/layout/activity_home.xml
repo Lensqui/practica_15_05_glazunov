@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_on_home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="26dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Главная"
+        android:id="@+id/txtTitle"
+        android:textSize="24sp"
+        android:fontFamily="@font/new_peninim_mt"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/for_cart_dot"
+        android:padding="19dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/handba"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="52dp"
+        android:textSize="16sp"
+        android:hint="Поиск"
+        android:drawableStart="@drawable/search_icon"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:textColor="#9aa2aa"
+        android:ems="10"
+        android:id="@+id/editexttext2"
+        android:inputType="text"
+        android:background="@drawable/poisk"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/buttons_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textCategories"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Популярное"
+        android:id="@+id/textPopular"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/buttons_recycler_view"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/crug"
+        android:padding="16dp"
+        android:id="@+id/filters"
+        android:src="@drawable/filters_32"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@id/editexttext2"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/handba"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Категории"
+        android:id="@+id/textCategories"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editexttext2"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Все"
+        android:padding="16dp"
+        android:id="@+id/txtAll"
+        android:textColor="@color/facebook_blue"
+        app:layout_constraintTop_toBottomOf="@id/buttons_recycler_view"
+        app:layout_constraintEnd_toEndOf="@id/filters"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Акции"
+        android:id="@+id/textSpecial"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/popularView"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Все"
+        android:padding="16dp"
+        android:id="@+id/txtAll2"
+        android:textColor="@color/facebook_blue"
+        app:layout_constraintTop_toBottomOf="@id/popularView"
+        app:layout_constraintEnd_toEndOf="@id/filters"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:id="@+id/popularView"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textPopular"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:id="@+id/SpecialView"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textSpecial"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="16dp"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bottom_nav_item_color"
+            app:itemTextColor="@color/bottom_nav_item_color"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cart"
+            app:layout_anchor="@id/bottom_navigation"
+            app:layout_anchorGravity="top|center"
+            app:elevation="8dp"
+            android:backgroundTint="@color/blue_90"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

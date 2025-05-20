@@ -33,4 +33,5 @@
     <string name="verify_otp">Verify</string>
     <string name="invalid_otp">Invalid OTP code</string>
     <string name="resend_code">Resend Code</string>
+    <string name="card_balance">$3.469.52</string>
 </resources>

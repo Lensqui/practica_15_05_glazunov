@@ -33,4 +33,5 @@
     <string name="verify_otp">Подтвердить</string>
     <string name="invalid_otp">Неверный OTP код</string>
     <string name="resend_code">Запросить код повторно</string>
+    <string name="card_balance">₽3.469.52</string>
 </resources>

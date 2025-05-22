@@ -43,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@id/title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="8dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -63,73 +63,101 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     app:cardCornerRadius="8dp"
-                app:cardBackgroundColor="#E0E0E0"
-                android:layout_marginEnd="8dp">
+                    app:cardBackgroundColor="#E0E0E0"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_email"
+                        android:contentDescription="Email"
+                        app:tint="@color/black" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="emmanuel@gmail.com"
+                        android:textSize="14sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="12sp"
+                        android:textColor="#808080"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_email"
-                    android:contentDescription="Email"
-                    app:tint="@color/black" />
-            </androidx.cardview.widget.CardView>
+                    android:src="@drawable/ic_edit_512"
+                    android:contentDescription="Edit Email"/>
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="emmanuel@gmail.com"
-                android:textSize="14sp"
-                android:textColor="#000000"
-                android:layout_marginStart="8dp"/>
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
 
-            <ImageView
-                android:layout_width="14dp"
-                android:layout_gravity="center"
-                android:layout_height="14dp"
-                android:src="@drawable/ic_edit_512"
-                android:contentDescription="Edit Email"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="#E0E0E0"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phone_512"
+                        android:contentDescription="Phone"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+234-811-732-5298"
+                        android:textSize="14sp"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Телефон"
+                        android:textSize="12sp"
+                        android:textColor="#808080"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_edit_512"
+                    android:contentDescription="Edit Phone"/>
+            </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                app:cardCornerRadius="8dp"
-            app:cardBackgroundColor="#E0E0E0"
-            android:layout_marginEnd="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_phone_512"
-                android:contentDescription="Phone"/>
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+234-811-732-5298"
-            android:textSize="14sp"
-            android:textColor="#000000"
-            android:layout_marginStart="8dp"/>
-
-        <ImageView
-            android:layout_width="14dp"
-            android:layout_height="14dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_edit_512"
-            android:contentDescription="Edit Phone"/>
-    </LinearLayout>
-</LinearLayout>
 
 <LinearLayout
 android:id="@+id/address_layout"

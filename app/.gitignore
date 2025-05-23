@@ -1,1 +1,6 @@
 /build
+/gradle
+/.gradle
+gradle.properies
+build.gradle.kts
+local.properies

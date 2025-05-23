@@ -66,8 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="$60.20"
                     android:textSize="14sp"
-                    android:textColor="#999999"
-                    android:paintFlags="strike_thru_text"/>
+                    android:textColor="#999999"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

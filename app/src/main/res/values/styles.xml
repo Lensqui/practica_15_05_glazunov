@@ -31,4 +31,9 @@
         <item name="strokeColor">@color/white</item>
         <item name="strokeWidth">2dp</item>
     </style>
+    <style name="NavigationDrawerStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:background">#00AEEF</item>
+        <item name="itemTextColor">#FFFFFF</item>
+        <item name="itemIconTint">#FFFFFF</item>
+    </style>
 </resources>

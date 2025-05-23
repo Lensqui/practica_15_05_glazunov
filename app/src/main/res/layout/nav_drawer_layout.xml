@@ -27,7 +27,7 @@
             android:layout_marginBottom="8dp" />
 
         <TextView
-            android:id="@+id/user_name"
+            android:id="@+id/user_fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Эмануэль Кверти"
@@ -48,7 +48,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -77,7 +79,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -106,7 +110,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -135,7 +141,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -164,7 +172,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -193,7 +203,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -222,7 +234,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
@@ -258,7 +272,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="12dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNavigationItemClicked">
 
             <ImageView
                 android:layout_width="24dp"
